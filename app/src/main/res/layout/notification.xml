@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/carolina_logo" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="101dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="4dp"
+        android:text="Title"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintLeft_toRightOf="@+id/appLogo"
+        app:layout_constraintStart_toEndOf="@+id/appLogo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="This is description"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/appLogo"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+</androidx.constraintlayout.widget.ConstraintLayout>

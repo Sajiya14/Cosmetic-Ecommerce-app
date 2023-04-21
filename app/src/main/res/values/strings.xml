@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">My Application 2</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="password_hint">Enter Your Password</string>
+    <string name="enter_your_email">Enter Your Email</string>
+    <string name="email">Email</string>
+    <string name="hi_please_login">Hi,\nPlease Login</string>
+    <string name="or_login_with">Or Login With</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+    <string name="log_in">Log in</string>
+    <string name="are_you_new_user_register">Are you new user? Register</string>
+    <string name="create_account">Create\nAccount</string>
+    <string name="name">Name</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="re_password">Re-Password</string>
+    <string name="repeat_your_password">Repeat Your Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="are_you_new_user">Are you new user?</string>
+    <string name="reset">Reset</string>
+    <string name="Fp">Forget\nPassword</string>
+    <string name="forget_password_description">Enter your name and e-mail address\n    we\'ll send a your e-mail to reset\n                   your password</string>
+
+
+    <string name="err_msg_enter_name">Please Enter Name</string>
+    <string name="err_msg_enter_email">Please Enter Email</string>
+    <string name="err_msg_enter_password">Please Enter Password</string>
+    <string name="err_msg_enter_RePassword">Please Enter RePassword</string>
+    <string name="err_msg_password_and_RePassword_mistake">Password and RePassword dose not match</string>
+    <string name="home">Home</string>
+    <string name="favorite">Favorite</string>
+    <string name="cart">Cart</string>
+    <string name="category">Category</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile">Profile</string>
+    <string name="search">Search</string>
+    <string name="price">Price</string>
+    <string name="description">Description</string>
+</resources>

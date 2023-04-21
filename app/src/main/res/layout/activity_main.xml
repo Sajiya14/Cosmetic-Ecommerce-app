@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/menuAppBar"
+        android:layout_width="393dp"
+        android:layout_height="71dp"
+        android:background="@color/white"
+        app:elevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="60sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_profile" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="200sp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Lording"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                app:menu="@menu/menu_button"/>
+
+        </LinearLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/social_btn_background"
+        app:iconifiedByDefault="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuAppBar"
+        app:queryHint="Search here...." />
+
+    <LinearLayout
+        android:id="@+id/discountImage"
+        android:layout_width="wrap_content"
+        android:layout_height="159dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/social_btn_background"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView">
+
+        <ImageView
+
+            android:layout_width="314dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/beauty_discount" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/discountImage"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/category"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:paddingStart="5dp"/>
+        <TextView
+            android:id="@+id/seeAll1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See All"
+            android:textSize="20dp"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            android:layout_marginStart="253dp"/>
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="417dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category">
+
+        <LinearLayout
+            android:id="@+id/categoryItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp">
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Body"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/social_btn_background"
+                    android:backgroundTint="@color/Gray"
+                    android:textColor="@color/green"/>
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Hair"
+                    android:textSize="20dp"
+                    android:background="@drawable/social_btn_background"
+                    android:backgroundTint="@color/Gray"
+                    android:textStyle="bold"
+                    android:textColor="@color/green"/>
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Face"
+                    android:textSize="20dp"
+                    android:background="@drawable/social_btn_background"
+                    android:backgroundTint="@color/Gray"
+                    android:textStyle="bold"
+                    android:textColor="@color/green"/>
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Lipstick"
+                    android:textSize="20dp"
+                    android:background="@drawable/social_btn_background"
+                    android:backgroundTint="@color/Gray"
+                    android:textStyle="bold"
+                    android:textColor="@color/green"/>
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Makeup"
+                    android:textSize="20dp"
+                    android:background="@drawable/social_btn_background"
+                    android:backgroundTint="@color/Gray"
+                    android:textStyle="bold"
+                    android:textColor="@color/green"/>
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Body"
+                    android:textSize="20dp"
+                    android:background="@drawable/social_btn_background"
+                    android:backgroundTint="@color/Gray"
+                    android:textStyle="bold"
+                    android:textColor="@color/green"/>
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Hair"
+                    android:textSize="20dp"
+                    android:background="@drawable/social_btn_background"
+                    android:backgroundTint="@color/Gray"
+                    android:textStyle="bold"
+                    android:textColor="@color/green"/>
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Face"
+                    android:textSize="20dp"
+                    android:background="@drawable/social_btn_background"
+                    android:backgroundTint="@color/Gray"
+                    android:textStyle="bold"
+                    android:textColor="@color/green"/>
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Lipstick"
+                    android:textSize="20dp"
+                    android:background="@drawable/social_btn_background"
+                    android:backgroundTint="@color/Gray"
+                    android:textStyle="bold"
+                    android:textColor="@color/green"/>
+
+            </com.google.android.material.chip.ChipGroup>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/bestItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:text="Best Item"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="245dp"
+            android:text="See All"
+            android:textColor="@color/green"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="414dp"
+        android:layout_height="459dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bestItem"
+        app:layout_constraintVertical_bias="0.042">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/each_item" />
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
